@@ -2,8 +2,8 @@ import FirebaseRemoteConfig
 import FirebaseRemoteConfigSwift
 
 @propertyWrapper public struct RemoteConfigProperty<T: Decodable> {
-    let key: String
-    let fallbackValue: T
+    public let key: String
+    public let fallbackValue: T
     
     public var wrappedValue: T {
         do {
