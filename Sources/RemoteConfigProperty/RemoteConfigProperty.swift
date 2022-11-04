@@ -5,6 +5,11 @@ import FirebaseRemoteConfigSwift
     public let key: String
     public let fallbackValue: T
     
+    public init(key: String, fallbackValue: T) {
+        self.key = key
+        self.fallbackValue = fallbackValue
+    }
+    
     public var wrappedValue: T {
         do {
             let configValue = RemoteConfig.remoteConfig()[key]
