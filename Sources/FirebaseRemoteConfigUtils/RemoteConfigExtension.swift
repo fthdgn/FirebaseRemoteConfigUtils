@@ -1,5 +1,4 @@
 import FirebaseRemoteConfig
-import FirebaseRemoteConfigSwift
 
 public extension FirebaseRemoteConfig.RemoteConfig {
     func getValue<T: Decodable>(forKey key: String, withFallback fallback: T) -> T {
